@@ -2,10 +2,11 @@
 # battery-discharge.sh is the data log creator
 # DATE,TIME,DISRATE
 # /Users/ceo/apps/MacDischarge/$D-bdrate.csv
-setwd("/Users/ceo/apps/MacDischarge/")
-suppressMessages(library(dplyr))   # 5 basic verbs: filter,select,arrange,mutate,summarise + group_by
+setwd("/Users/ceo/Desktop/macos/git/apps/MacDischarge/")
+#suppressMessages(library(dplyr))   # 5 basic verbs: filter,select,arrange,mutate,summarise + group_by
 library(chron)     # converts time to seconds
 library(stringr)   # remove whitespace
+library(dplyr)
 suppressMessages(library(tidyverse)) # includes ggplot2
 dat = "data/"                           # data directory
 d1 = format(Sys.Date(),"%Y-%m-%d")      # date   Sys.Date()

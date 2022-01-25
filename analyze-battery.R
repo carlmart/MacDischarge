@@ -9,10 +9,11 @@
 
 #setwd("/Users/ceo/apps/MacDischarge/")
 setwd("/Users/ceo/Desktop/macos/git/apps/MacDischarge")
-suppressMessages(library(dplyr))    # 5 basic verbs: filter,select,arrange,mutate,summarise + group_by
+#suppressMessages(library(dplyr))    # 5 basic verbs: filter,select,arrange,mutate,summarise + group_by
 library(chron)     # converts time to seconds
 library(stringr)   # remove whitespace
-suppressMessages(library(tidyverse)) # includes ggplot2
+library(tidyverse)   # functions like mutate etc
+#suppressMessages(library(tidyverse)) # includes ggplot2
 dat = "data/"                           # data directory
 d1 = format(Sys.Date(),"%Y-%m-%d")      # date   Sys.Date()
 f1 = toString(d1)                       # convert date to string
@@ -21,6 +22,7 @@ fname = paste(dat,f1 ,f2)
 flname = str_trim(fname)
 fname = str_replace_all(flname, fixed(" "), "")  # clear all spaces
 #print(fname)
+print(fname) #debug
 # example data/2021-02-22-bdrate.csv
 
 

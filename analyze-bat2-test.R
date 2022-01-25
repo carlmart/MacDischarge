@@ -1,6 +1,7 @@
 #!/usr/local/bin/Rscript
 # /Users/ceo/apps/MacDischarge/
-setwd("/Users/ceo/apps/MacDischarge/")
+# setwd("/Users/ceo/apps/MacDischarge/")
+setwd("/Users/ceo/Desktop/macos/git/apps/MacDischarge")
 suppressMessages(library(dplyr))  # 5 basic verbs: filter,select,arrange,mutate,summarise + group_by
 library(chron)     # converts time to seconds
 library(stringr)   # remove whitespace
